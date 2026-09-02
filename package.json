@@ -1,0 +1,11 @@
+{
+  "name": "ortiz-ai",
+  "version": "2.13.0",
+  "private": true,
+  "description": "Ortiz AI v2.13 - authenticated Gemini-powered AI chat web app",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check netlify/functions/chat.mjs && node --check netlify/functions/stripe-webhook.js && node --check server.js && node --check app.js"
+  }
+}
